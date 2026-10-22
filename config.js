@@ -7,7 +7,7 @@ window.GAME = {
   pickupStartISO: "2026-10-26",            // weapon pickup Oct 26 to Oct 30
   pickupEndISO: "2026-10-30",
   crowningDates: "Dec 5",                  // winner crowned at ORGT Prom
-  signupFormUrl: "",         // Microsoft Form link (GT sign-in required, has headshot upload). Blank = "coming soon"
+  signupFormUrl: "https://forms.cloud.microsoft/r/iY3Apj4f2n",         // Microsoft Form link (GT sign-in required, has headshot upload). Blank = "coming soon"
   reportFormUrl: "",         // Microsoft Form link (GT sign-in required, has proof upload). Blank = "coming soon"
   formMode: "link",          // "link" (default, button opens new tab) or "embed" (iframe, only if it is tested to work)
   finaleUnlocked: false,

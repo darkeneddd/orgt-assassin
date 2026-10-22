@@ -117,18 +117,6 @@
   }
 
   /* ---------- Timeline ---------- */
-  function fridayLabel() {
-    var prevMonth = null;
-    var parts = FRIDAYS.map(function (iso) {
-      var d = localDate(iso);
-      var mon = d.toLocaleDateString("en-US", { month: "short" });
-      var s = (mon !== prevMonth ? mon + " " : "") + d.getDate();
-      prevMonth = mon;
-      return s;
-    });
-    return "Fridays 9 pm (" + parts.join(", ") + ")";
-  }
-
   function initTimeline() {
     var list = document.getElementById("timeline");
     var signup = new Date(G.signupDeadlineISO);
@@ -145,7 +133,7 @@
       { when: fmtET(signup), what: "Signups close", done: signup },
       { when: fmtET(pickStart) + " to " + fmtET(pickEnd), what: "Weapon pickup at ORGT", done: pickEnd },
       { when: fmtET(start, true), what: "Game starts", done: start },
-      { when: fridayLabel(), what: "Weekly dispatch", href: "dispatches.html", done: lastFriday },
+      { when: "Fridays 9 pm", what: "Weekly dispatch", href: "dispatches.html", done: lastFriday },
       { when: fmtET(end, true), what: "Game ends. The Report a Kill form closes.", done: end },
       { when: G.crowningDates, what: "Winner crowned at ORGT Prom", done: crownEnd }
     ];
