@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="ORGT Assassin: a month-long campus game run by ORGT.">
+  <meta name="theme-color" content="#15130f">
+  <title>ORGT Assassin</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
+  <link rel="preload" href="assets/fonts/special-elite-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main id="main">
+  <section class="hero">
+    <p class="eyebrow">Case file: ORGT</p>
+    <h1>ORGT Assassin</h1>
+    <p class="tagline">Agent, your carabiner is your only tool.</p>
+    <div id="countdown" class="countdown" role="timer"></div>
+  </section>
+
+  <section class="block" aria-label="Sign up or report a kill">
+    <div id="action" class="card card--flat action"></div>
+  </section>
+
+  <section class="block" aria-labelledby="how-h">
+    <h2 id="how-h">How it works</h2>
+    <ol class="steps">
+      <li class="card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="11" width="36" height="26" rx="3"/><path d="M6 14l18 14 18-14"/></svg>
+        <div><span class="step-num">Step 1</span><h3>Get your target</h3><p>Your target arrives by email before the game starts.</p></div>
+      </li>
+      <li class="card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><g transform="rotate(35 24 24)"><path d="M33 19v-4a6 6 0 0 0-6-6h-6a6 6 0 0 0-6 6v18a6 6 0 0 0 6 6h6a6 6 0 0 0 6-6v-8"/></g></svg>
+        <div><span class="step-num">Step 2</span><h3>Clip the carabiner</h3><p>Clip it onto them for real. Both of you and the weapon in the shot.</p></div>
+      </li>
+      <li class="card">
+        <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M5 15h8l3-5h16l3 5h8v22H5z"/><circle cx="24" cy="26" r="7"/></svg>
+        <div><span class="step-num">Step 3</span><h3>Submit proof</h3><p>Send the photo or video through the Report a Kill form.</p></div>
+      </li>
+    </ol>
+  </section>
+
+  <section class="block" aria-labelledby="time-h">
+    <h2 id="time-h">Timeline</h2>
+    <ol id="timeline" class="timeline"></ol>
+  </section>
+
+  <section class="block" aria-labelledby="latest-h">
+    <h2 id="latest-h">Latest dispatch</h2>
+    <div id="teaser" class="card card--flat teaser"></div>
+  </section>
+  <noscript><div class="card card--flat"><p>This page needs JavaScript to load its content.</p></div></noscript>
+</main>
+
+<script src="config.js"></script>
+<script src="js/common.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>

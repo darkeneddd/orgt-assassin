@@ -1,0 +1,46 @@
+/* Theme: noir case file with an outdoors twist.
+   Everything that defines the look lives here. Swap this file to re-theme the site. */
+
+@font-face {
+  font-family: "Special Elite";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/special-elite-latin.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../assets/fonts/inter-latin.woff2") format("woff2");
+}
+
+:root {
+  /* Palette */
+  --bg: #15130f;
+  --paper: #e9e1cf;
+  --ink: #1d1a14;
+  --stamp-red: #b3261e;
+  --accent: #c9a24b;
+  --stamp-red-light: #e0584f;  /* red that reads on the dark background */
+  --muted: #a79f8a;            /* secondary text on the dark background */
+  --ink-soft: #4a4336;         /* secondary text on paper */
+  --panel: #211e18;            /* dark raised panels */
+  --panel-edge: #3a352b;
+  --header-bg: rgba(21, 19, 15, 0.94);
+
+  /* Type */
+  --font-heading: "Special Elite", "Courier New", Courier, monospace;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+  /* Components */
+  --card-rotate: 0.5deg;
+  --card-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  --radius: 3px;
+  --stamp-rotate: -4deg;
+
+  /* Background: topographic contour lines, tiled */
+  --bg-pattern: url("../assets/contours.svg");
+  --bg-pattern-size: 600px;
+}
