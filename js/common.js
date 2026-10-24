@@ -75,10 +75,12 @@
     var p = el("p");
     var hasEmail = !isUnset(G.contactEmail);
     var hasPhone = !isUnset(G.contactPhone);
+    var hasName = !isUnset(G.contactName);
     if (!hasEmail && !hasPhone) {
       p.textContent = "Contact: coming soon";
     } else {
       p.appendChild(document.createTextNode("Contact: "));
+      if (hasName) p.appendChild(document.createTextNode(G.contactName + " | "));
       if (hasEmail) {
         var a = el("a", null, G.contactEmail);
         a.href = "mailto:" + G.contactEmail;
