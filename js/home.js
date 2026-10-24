@@ -116,6 +116,17 @@
     }
   }
 
+  /* ---------- GroupMe ---------- */
+  function initGroupMe() {
+    var card = document.getElementById("groupme");
+    card.appendChild(el("h2", null, "Announcements"));
+    card.appendChild(el("p", null, "Updates, safe objects and reminders go out in the GroupMe. Join it so you don't miss anything."));
+    var btn = formButton("Join the GroupMe", G.groupmeUrl);
+    btn.className += " btn--small";
+    card.appendChild(btn);
+    card.appendChild(el("p", "note", S.isUnset(G.groupmeUrl) ? "GroupMe link coming soon." : "Opens in a new tab."));
+  }
+
   /* ---------- Timeline ---------- */
   function initTimeline() {
     var list = document.getElementById("timeline");
@@ -195,6 +206,7 @@
 
   initHero();
   initAction();
+  initGroupMe();
   initTimeline();
   initTeaser();
 })();

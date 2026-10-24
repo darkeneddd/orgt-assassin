@@ -35,9 +35,9 @@ Create `config.js` with one object the pages read:
 ```js
 window.GAME = {
   phase: "pre",              // "pre" | "live" | "ended"
-  startISO: "2026-10-31T00:00:00-04:00",   // confirmed: Oct 31 at 12:00 am
+  startISO: "2026-11-01T00:00:00-04:00",   // confirmed: Nov 1 at 12:00 am
   endISO:   "2026-12-03T00:00:00-05:00",   // game ends at the end of Dec 2; this is also the kill-report cutoff
-  signupDeadlineISO: "2026-10-26T23:59:00-04:00",
+  signupDeadlineISO: "2026-10-27T23:59:00-04:00",
   pickupStartISO: "2026-10-26",            // weapon pickup Oct 26 to Oct 30
   pickupEndISO: "2026-10-30",
   crowningDates: "Dec 5",                  // winner crowned at ORGT Prom
@@ -60,9 +60,9 @@ Top to bottom:
    - `phase: "ended"` shows "Game over".
 2. "How it works": three short steps with icons: get your target (by email), clip the carabiner, submit proof.
 2b. **Timeline strip** (compact, horizontal on desktop, vertical on mobile), read from `config.js`:
-   - Oct 26: signups close
+   - Oct 27: signups close
    - Oct 26 to Oct 30: weapon pickup at ORGT
-   - Oct 31 at 12:00 am: game starts
+   - Nov 1 at 12:00 am: game starts
    - Fridays 9 pm (Nov 6, 13, 20, 27, Dec 4): weekly dispatch
    - Dec 2 at midnight: game ends, and the Report a Kill form closes
    - Dec 5: winner crowned at ORGT Prom
