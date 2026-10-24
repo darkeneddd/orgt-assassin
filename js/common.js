@@ -71,15 +71,25 @@
 
   function buildFooter() {
     var f = el("footer", "site-footer");
-    f.appendChild(el("p", null, "Unofficial event, not affiliated with the CRC"));
+    f.appendChild(el("p", null, "Unofficial event, not affiliated with the CRC or Georgia Tech"));
     var p = el("p");
-    if (isUnset(G.contactEmail)) {
+    var hasEmail = !isUnset(G.contactEmail);
+    var hasPhone = !isUnset(G.contactPhone);
+    if (!hasEmail && !hasPhone) {
       p.textContent = "Contact: coming soon";
     } else {
       p.appendChild(document.createTextNode("Contact: "));
-      var a = el("a", null, G.contactEmail);
-      a.href = "mailto:" + G.contactEmail;
-      p.appendChild(a);
+      if (hasEmail) {
+        var a = el("a", null, G.contactEmail);
+        a.href = "mailto:" + G.contactEmail;
+        p.appendChild(a);
+      }
+      if (hasEmail && hasPhone) p.appendChild(document.createTextNode(" | "));
+      if (hasPhone) {
+        var t = el("a", null, G.contactPhone);
+        t.href = "tel:" + G.contactPhone.replace(/[^\d+]/g, "");
+        p.appendChild(t);
+      }
     }
     f.appendChild(p);
     return f;

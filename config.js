@@ -12,5 +12,6 @@ window.GAME = {
   formMode: "link",          // "link" (default, button opens new tab) or "embed" (iframe, only if it is tested to work)
   groupmeUrl: "https://groupme.com/join_group/118349541/2qW5KJn7",          // GroupMe invite link for announcements. Blank = "coming soon"
   finaleUnlocked: false,
-  contactEmail: ""           // Blank = "coming soon"
+  contactEmail: "avadhera7@gatech.edu",          // Blank = "coming soon"
+  contactPhone: "470-907-6921"           // Optional, e.g. "(404) 555-0123". Shown in the footer next to the email
 };
