@@ -1,3 +1,7 @@
 [
-  { "title": "Sample Dispatch", "date": "2026-11-06", "body": "<p>This is a sample entry. Delete it from data/dispatches.json before the game starts.</p><p>Three assassinations this week.</p>", "sample": true }
+  {
+    "title": "Welcome, Agent",
+    "date": "2026-10-23",
+    "body": "<p>The case is open. Welcome to ORGT Assassin. On Nov 1 at 12:00 am the hunt begins, and every agent in the game will have a target.</p><p><strong>Get ready:</strong></p><ul><li><strong>Sign up</strong> by Oct 27 at 11:59 pm. Miss the deadline and you are sitting this one out.</li><li><strong>Grab your weapon</strong> at ORGT from Oct 26 to Oct 30 during open Outpost hours. Only grab one.</li><li><strong>Watch your inbox.</strong> Your target arrives by email before the game starts.</li><li><strong>Learn the <a href=\"rules.html\">rules</a></strong>, especially the safe zones. Know where you are protected and where you are not.</li><li><strong>Join the GroupMe.</strong> Announcements, surprises and safe objects for certain weeks are shared there and on this site.</li></ul><p>Dispatches will land here every Friday at 9 pm with the latest from the field. Until then, trust no one, check behind you, and keep your eyes open.</p>"
+  }
 ]
