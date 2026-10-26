@@ -38,7 +38,7 @@ window.GAME = {
   startISO: "2026-11-01T00:00:00-04:00",   // confirmed: Nov 1 at 12:00 am
   endISO:   "2026-12-03T00:00:00-05:00",   // game ends at the end of Dec 2; this is also the kill-report cutoff
   signupDeadlineISO: "2026-10-27T23:59:00-04:00",
-  pickupStartISO: "2026-10-26",            // weapon pickup Oct 26 to Oct 30
+  pickupStartISO: "2026-10-27",            // weapon pickup Oct 27 to Oct 30
   pickupEndISO: "2026-10-30",
   crowningDates: "Dec 5",                  // winner crowned at ORGT Prom
   signupFormUrl: "TODO",     // Microsoft Form link (GT sign-in required, has headshot upload)
@@ -61,7 +61,7 @@ Top to bottom:
 2. "How it works": three short steps with icons: get your target (by email), clip the carabiner, submit proof.
 2b. **Timeline strip** (compact, horizontal on desktop, vertical on mobile), read from `config.js`:
    - Oct 27: signups close
-   - Oct 26 to Oct 30: weapon pickup at ORGT
+   - Oct 27 to Oct 30: weapon pickup at ORGT
    - Nov 1 at 12:00 am: game starts
    - Fridays 9 pm (Nov 6, 13, 20, 27, Dec 4): weekly dispatch
    - Dec 2 at midnight: game ends, and the Report a Kill form closes
@@ -115,7 +115,7 @@ Use the organizer's rules, trimmed. Dates are TODO.
 - **Clarifications:** you may not steal or break others' carabiners (you may grab and toss one away if someone is attacking you); lost carabiner: get another at ORGT; personal trips and training trips are not IP trips and are fair game; no assassinating someone who is driving; no clocking in or out of work just to assassinate; the organizer has the final call.
 - **How to win:** the game ends when one assassin remains. If no one remains alone when the game ends (Dec 2 at midnight, end of day), the assassin with the most kills wins. Kills must be submitted through the Report a Kill form before the game ends; reports after that do not count.
 - **Prize:** the winner is crowned at ORGT Prom on Dec 5. Prize itself TODO (previous year: a sash made of carabiners, plus a possible highlight reel).
-- **Weapon pickup:** Oct 26 to Oct 30 at ORGT during open Outpost hours. Only grab one.
+- **Weapon pickup:** Oct 27 to Oct 30 at ORGT during open Outpost hours. Only grab one.
 - **FAQ:** lost carabiner, disputes, who has the final call, what if I'm eliminated (forward your target to your killer).
 
 ## Photo prep script

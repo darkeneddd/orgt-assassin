@@ -6,7 +6,7 @@ Assassinate your target by clipping a provided carabiner on them. When you elimi
 - No disrupting tests or lectures.
 - Use only game-provided weapons.
 - No excessive physical contact. Do not hurt anyone.
-- **Weapon pickup:** Oct 26 to Oct 30 at ORGT during open Outpost hours. Only grab one.
+- **Weapon pickup:** Oct 27 to Oct 30 at ORGT during open Outpost hours. Only grab one.
 
 ## Safe Zones
 You cannot be assassinated in these places:

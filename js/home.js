@@ -120,7 +120,7 @@
   function initGroupMe() {
     var card = document.getElementById("groupme");
     card.appendChild(el("h2", null, "Announcements"));
-    card.appendChild(el("p", null, "Updates, safe objects and reminders go out in the GroupMe. Join it so you don't miss anything."));
+    card.appendChild(el("p", null, "ORGT announcements, safe objects and reminders go out in the GroupMe and on this website."));
     var btn = formButton("Join the GroupMe", G.groupmeUrl);
     btn.className += " btn--small";
     card.appendChild(btn);
