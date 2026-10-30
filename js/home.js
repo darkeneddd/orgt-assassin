@@ -82,11 +82,13 @@
     }
     card.appendChild(el("h2", null, G.phase === "live" ? "Got one?" : "Join the game"));
 
+    // Before the game, signups are closed once the deadline passes.
+    var closed = G.phase !== "live" && new Date() > new Date(G.signupDeadlineISO);
     if (G.phase !== "live") {
-      card.appendChild(el("p", "deadline", "Signups close " + fmtET(new Date(G.signupDeadlineISO), true) + "."));
+      card.appendChild(el("p", "deadline", closed ? "Signups are closed." : "Signups close " + fmtET(new Date(G.signupDeadlineISO), true) + "."));
     }
 
-    var embed = G.formMode === "embed" && !S.isUnset(url);
+    var embed = G.formMode === "embed" && !S.isUnset(url) && !closed;
     if (embed) {
       var f = el("iframe");
       f.src = url;
@@ -97,8 +99,8 @@
       fb.href = url; fb.target = "_blank"; fb.rel = "noopener";
       card.appendChild(fb);
     } else {
-      card.appendChild(formButton(btnText, url));
-      card.appendChild(el("p", "note", S.isUnset(url) ? "Form link coming soon." : "Opens in a new tab. Sign in with your GT account."));
+      card.appendChild(formButton(btnText, closed ? "" : url));
+      if (!closed) card.appendChild(el("p", "note", S.isUnset(url) ? "Form link coming soon." : "Opens in a new tab. Sign in with your GT account."));
     }
 
     if (G.phase === "live") {
