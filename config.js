@@ -1,6 +1,6 @@
 // Edit this file to run the game. See README.md for what to change each phase.
 window.GAME = {
-  phase: "pre",              // "pre" | "live" | "ended"
+  phase: "live",              // "pre" | "live" | "ended"
   startISO: "2026-11-01T00:00:00-04:00",   // confirmed: Nov 1 at 12:00 am
   endISO:   "2026-12-02T23:59:00-05:00",   // game ends Dec 2 at 11:59 pm; this is also the kill-report cutoff
   signupDeadlineISO: "2026-10-27T23:59:00-04:00",
