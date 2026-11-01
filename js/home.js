@@ -102,20 +102,6 @@
       card.appendChild(formButton(btnText, closed ? "" : url));
       if (!closed) card.appendChild(el("p", "note", S.isUnset(url) ? "Form link coming soon." : "Opens in a new tab. Sign in with your GT account."));
     }
-
-    if (G.phase === "live") {
-      var p = el("p", "note");
-      if (S.isUnset(G.contactEmail)) {
-        p.textContent = "Not signed up? Contact the organizer.";
-      } else {
-        p.appendChild(document.createTextNode("Not signed up? "));
-        var a = el("a", null, "Contact the organizer");
-        a.href = "mailto:" + G.contactEmail;
-        p.appendChild(a);
-        p.appendChild(document.createTextNode("."));
-      }
-      card.appendChild(p);
-    }
   }
 
   /* ---------- GroupMe ---------- */
