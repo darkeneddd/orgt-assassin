@@ -8,7 +8,7 @@ window.GAME = {
   pickupEndISO: "2026-10-30",
   crowningDates: "Dec 5",                  // winner crowned at ORGT Prom
   signupFormUrl: "https://forms.cloud.microsoft/r/iY3Apj4f2n",         // Microsoft Form link (GT sign-in required, has headshot upload). Blank = "coming soon"
-  reportFormUrl: "",         // Microsoft Form link (GT sign-in required, has proof upload). Blank = "coming soon"
+  reportFormUrl: "https://www.tinyurl.com/orgtkill",         // Microsoft Form link (GT sign-in required, has proof upload). Blank = "coming soon"
   formMode: "link",          // "link" (default, button opens new tab) or "embed" (iframe, only if it is tested to work)
   groupmeUrl: "https://groupme.com/join_group/118349541/2qW5KJn7",          // GroupMe invite link for announcements. Blank = "coming soon"
   finaleUnlocked: false,
