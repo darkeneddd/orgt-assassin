@@ -230,20 +230,26 @@ section.block > h2 { color: var(--accent); }
 
 /* ---------- Graveyard ---------- */
 .fallen-count { font-family: var(--font-heading); color: var(--accent); margin-bottom: 1rem; }
-.tombs { list-style: none; padding: 0; margin: 0; display: grid; gap: 1.1rem; grid-template-columns: repeat(2, 1fr); }
-@media (min-width: 700px) { .tombs { grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); } }
-.tomb { padding: 0.75rem 0.75rem 1rem; text-align: center; }
-.tomb .photo { position: relative; aspect-ratio: 1; overflow: hidden; background: #2a261e; margin-bottom: 0.6rem; }
+.wide main, .wide .header-inner { max-width: 80rem; }
+/* Flex rather than grid so a short last row stays centered. --cols is how many cards fit per row. */
+.tombs { --cols: 3; --gap: 0.8rem; list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: var(--gap); }
+.tombs > li { flex: 0 0 calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols)); }
+@media (min-width: 600px) { .tombs { --cols: 4; } }
+@media (min-width: 900px) { .tombs { --cols: 6; } }
+@media (min-width: 1100px) { .tombs { --cols: 7; } }
+@media (min-width: 1250px) { .tombs { --cols: 8; } }
+.tomb { padding: 0.5rem 0.5rem 0.7rem; text-align: center; }
+.tomb .photo { position: relative; aspect-ratio: 1; overflow: hidden; background: #2a261e; margin-bottom: 0.45rem; }
 .tomb .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .tomb--out .photo img { filter: grayscale(1) brightness(0.65); }
 .tomb--out .name { text-decoration: line-through; text-decoration-color: var(--stamp-red); text-decoration-thickness: 2px; color: var(--ink-soft); }
 .tomb .photo .x {
   position: absolute; inset: 0; display: grid; place-items: center;
-  font-family: var(--font-heading); font-size: 7rem; line-height: 1; color: var(--stamp-red-light);
+  font-family: var(--font-heading); font-size: 4rem; line-height: 1; color: var(--stamp-red-light);
   opacity: 0.85; transform: rotate(-8deg); text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 }
-.tomb .name { font-family: var(--font-heading); font-size: 1.15rem; margin: 0; }
-.tomb .when { font-size: 0.85rem; color: var(--ink-soft); margin: 0; }
+.tomb .name { font-family: var(--font-heading); font-size: 0.9rem; line-height: 1.2; margin: 0; }
+.tomb .when { font-size: 0.75rem; color: var(--ink-soft); margin: 0; }
 .tomb .sample-tag { display: block; margin-top: 0.4rem; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; color: var(--stamp-red); }
 .empty-state { text-align: center; padding: 2rem 1rem; }
 .empty-state p { margin: 0; font-family: var(--font-heading); font-size: 1.3rem; }
