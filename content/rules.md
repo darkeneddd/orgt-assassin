@@ -16,7 +16,9 @@ You cannot be assassinated in these places:
 - Classroom sessions for IP participants, and IP trips (including gear cleaning after)
 - Inside an ORGT van or SUV
 - Quiet places on campus (e.g. Crossland 6 and 7)
-- In class (before and after class are fair game)
+- In class, inside the lecture hall: you are protected from 5 minutes before class starts until 5 minutes after it ends. For example, if class runs 9:15 to 10:30, you are safe from 9:10 to 10:35. Outside that window, or outside the lecture hall, you are fair game.
+- Wall practice. Before and after practice you are fair game.
+- The pool area during Roll School. Locker rooms and other areas around the pool are not safe.
 - At work (including labs)
 Everything else is fair game, including GT campus, the ORGT parking lot, and home park.
 
