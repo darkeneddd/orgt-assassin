@@ -13,10 +13,10 @@ You cannot be assassinated in these places:
 - ORGT classroom
 - ORGT cages (inside only)
 - Sport-wide meetings
-- Classroom sessions for IP participants, and IP trips (including gear cleaning after)
 - Inside an ORGT van or SUV
-- Quiet places on campus (e.g. Crossland 6 and 7)
-- In class, inside the lecture hall: you are protected from 5 minutes before class starts until 5 minutes after it ends. Outside that window, or outside the lecture hall, you are fair game.
+- Classroom sessions for IP participants, and IP trips (including gear cleaning after)
+- Quiet places on campus (e.g. Crosland 6 and 7)
+- In class, inside the lecture hall: you are protected from 5 minutes before class starts until 5 minutes after it ends.
 - Wall practice. Before and after practice you are fair game.
 - The pool area during Roll School. Locker rooms and other areas around the pool are not safe.
 - At work (including labs)
