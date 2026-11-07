@@ -3,7 +3,7 @@
 Hand this file to Claude Code. Build exactly what is listed. Do not add features that are not listed. Ask before changing anything under "Hard constraints".
 
 ## What this is
-A small themed website for ORGT Assassin, a month-long campus game run by ORGT (Georgia Tech). Players are ORGT members. The site holds the rules, the sign-up form, the kill-report form, a graveyard of eliminated players, and weekly update posts. The organizer updates it by hand every Friday.
+A small themed website for ORGT Assassin, a month-long campus game for ORGTeers (Georgia Tech). Players are ORGT members. The site holds the rules, the sign-up form, the kill-report form, a graveyard of eliminated players, and weekly update posts. The organizer updates it by hand every Friday.
 
 ## Hard constraints
 1. **Never show target assignments**, current or past. Never show who is hunting whom.
