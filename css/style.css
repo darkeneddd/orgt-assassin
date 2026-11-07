@@ -239,13 +239,13 @@ section.block > h2 { color: var(--accent); }
 @media (min-width: 1100px) { .tombs { --cols: 7; } }
 @media (min-width: 1250px) { .tombs { --cols: 8; } }
 .tomb { padding: 0.5rem 0.5rem 0.7rem; text-align: center; }
-.tomb .photo { position: relative; aspect-ratio: 1; overflow: hidden; background: #2a261e; margin-bottom: 0.45rem; }
+.tomb .photo { container-type: inline-size; position: relative; aspect-ratio: 1; overflow: hidden; background: #2a261e; margin-bottom: 0.45rem; }
 .tomb .photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .tomb--out .photo img { filter: grayscale(1) brightness(0.65); }
 .tomb--out .name { text-decoration: line-through; text-decoration-color: var(--stamp-red); text-decoration-thickness: 2px; color: var(--ink-soft); }
 .tomb .photo .x {
   position: absolute; inset: 0; display: grid; place-items: center;
-  font-family: var(--font-heading); font-size: 4rem; line-height: 1; color: var(--stamp-red-light);
+  font-family: var(--font-heading); font-size: 6rem; font-size: 95cqw; line-height: 1; color: var(--stamp-red-light);
   opacity: 0.85; transform: rotate(-8deg); text-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
 }
 .tomb .name { font-family: var(--font-heading); font-size: 0.9rem; line-height: 1.2; margin: 0; }
