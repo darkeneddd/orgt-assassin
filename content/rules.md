@@ -24,7 +24,7 @@ Everything else is fair game, including GT campus, the ORGT parking lot, and hom
 
 ## Safe Objects
 Some weeks have a safe object. Which object, and how it protects you, is announced in the GroupMe and posted here when that week begins.
-- **This week:** No safe object announced yet.
+- **This week:** A cone party hat or an oven mitt. Wear one or the other and you are safe, but only while you are wearing it.
 
 ## How to Assassinate
 - Clip the carabiner for real. Placing it on someone doesn't count. A backpack they are carrying counts.
