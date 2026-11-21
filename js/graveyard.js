@@ -5,10 +5,12 @@
   var el = S.el;
   var SILHOUETTE = "assets/silhouette.svg";
 
-  // An agent with a "date" is eliminated. No "date" means still in play.
+  // An agent with a "date" is out of the game. No "date" means still in play.
+  // "inactive": true means they left the game rather than being killed, so they get a dash instead of an X.
   function tomb(p) {
     var out = !!p.date;
-    var li = el("li", "card tomb" + (out ? " tomb--out" : ""));
+    var left = out && !!p.inactive;
+    var li = el("li", "card tomb" + (out ? " tomb--out" : "") + (left ? " tomb--left" : ""));
     var photo = el("div", "photo");
     var img = el("img");
     img.alt = "Headshot of " + p.name;
@@ -19,13 +21,13 @@
     img.onerror = function () { img.onerror = null; img.src = SILHOUETTE; };
     photo.appendChild(img);
     if (out) {
-      var x = el("span", "x", "X");
+      var x = el("span", "x", left ? "—" : "X");
       x.setAttribute("aria-hidden", "true");
       photo.appendChild(x);
     }
     li.appendChild(photo);
     li.appendChild(el("p", "name", p.name));
-    li.appendChild(el("p", "when", out ? "Eliminated " + S.fmtDate(p.date) : "Active"));
+    li.appendChild(el("p", "when", out ? (left ? "Left the game " : "Eliminated ") + S.fmtDate(p.date) : "Active"));
     if (p.sample) li.appendChild(el("span", "sample-tag", "SAMPLE - DELETE ME"));
     return li;
   }
@@ -42,8 +44,9 @@
         box.replaceWith(e);
         return;
       }
-      var fallen = rows.filter(function (p) { return p.date; }).length;
-      count.textContent = (rows.length - fallen) + " active, " + fallen + " fallen";
+      var left = rows.filter(function (p) { return p.date && p.inactive; }).length;
+      var fallen = rows.filter(function (p) { return p.date && !p.inactive; }).length;
+      count.textContent = (rows.length - fallen - left) + " active, " + fallen + " fallen" + (left ? ", " + left + " left the game" : "");
       rows.forEach(function (p) { box.appendChild(tomb(p)); });
     });
   }
